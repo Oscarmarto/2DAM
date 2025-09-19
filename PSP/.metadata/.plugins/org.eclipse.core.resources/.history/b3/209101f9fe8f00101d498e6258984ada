@@ -1,0 +1,14 @@
+package Ejercicio1;
+
+import java.util.Scanner;
+
+public class ej2 {
+
+	public static void main(String[] args) {
+		
+		System.out.print("Com et dius? ");
+		Scanner nom = new Scanner(System.in);
+		System.out.println("Hola "+nom);
+	}
+
+}

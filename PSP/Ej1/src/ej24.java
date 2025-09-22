@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class ej24 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce un numero del 1 al 10");
+        int num1 = sc.nextInt();
+        int num2 = (int)(Math.random()*10)+1;
+        int prem;
+        if(num1==num2){
+            System.out.println("El numero es correcto");
+            System.out.println("Elige un peluche de premio");
+            System.out.println("El 1 es un perro, el 2 un gato y el 3 es una jirafa");
+            prem = sc.nextInt();
+            switch (prem){
+                case 1:
+                    System.out.println("Has elegido el perro!");
+                    break;
+                case 2:
+                    System.out.println("Has elegido el gato");
+                    break;
+                case 3:
+                    System.out.println("Has elegido el jirafa");
+                    break;
+                default:
+                    System.out.println("Pero pon el numero bien");
+                    break;
+            }
+        }else{
+            System.out.println("El numero es incorrecto");
+        }
+    }
+}

@@ -221,9 +221,28 @@ const tornaId = (usuari) => {
 console.log(tornaId(dadesUsuaris[1]))
 
 console.log("-----------------");
-//Creeu una funció (POSEU-LI vosaltres un nom descriptiu) que amb un reduce/filter, torne un array amb els id d'aquelles empreses que no tenen website
+//Creeu una funció (POSEU-LI vosaltres un nom descriptiu) que amb un reduce/filter,
+//torne un array amb els id d'aquelles empreses que no tenen website
 //[{ id: 2 }, { id: 5 }]
+
+    const tornaIdSenseWebsite = () => {
+        let obj = dadesUsuaris.reduce((acum, element) => {
+            if(element.website === ""){
+                acum.push({ id: element.id})}
+                return acum;
+            }, [])
+            return obj;
+    }
+
+console.log(tornaIdSenseWebsite());
 console.log("-----------------");
 //reduce en una sola línia
 // [ { id: 2 }, { id: 5 } ]
+
+const tornaIdSenseWebsit = () => {
+        let obj = dadesUsuaris.reduce((acum, element) => (element.website === "" ? [acum, { id: element.id}] : acum),[]);
+}
+const tornaIdSenseWebsite2 = () => dadesUsuaris.reduce((acum, e) => (e.website === "" && acum.push({ id: e.id }), acum), []);
+
+console.log(tornaIdSenseWebsite2());
 console.log("-----------------");

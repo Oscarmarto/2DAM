@@ -1,6 +1,7 @@
 package T1_Fichers;
 
 import java.io.File;
+import java.io.FilenameFilter;
 import java.util.Scanner;
 
 public class ej4 {
@@ -23,4 +24,6 @@ public class ej4 {
         System.out.println("Se puede escribir: "+ algo.canWrite());
         System.out.println("Tamaño del archivo: "+algo.length());
     }
+
+
 }

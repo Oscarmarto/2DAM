@@ -33,7 +33,7 @@ public class Ej1 {
 //        String strdirectorio2 = args[0];
 //        System.out.println();
 //        File directorio2 = new File(strdirectorio2);
-//        FiltroExtension filtro = new FiltroExtension(".txt");
+//        T1_Fichers.ej4.FiltroExtension filtro = new T1_Fichers.ej4.FiltroExtension(".txt");
 //        String[] listaArchivos2 = directorio2.list(filtro);
 //        for (int i = 0; i < listaArchivos2.length; i++) {
 //            System.out.println(

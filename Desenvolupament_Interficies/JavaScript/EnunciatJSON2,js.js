@@ -126,6 +126,7 @@ const dadesUsuaris = [
 ] */
 //fer-ho amb map
 
+
 const llistat_Id_Nom_Email = () => {
     let llistat = dadesUsuaris.map(element => {
         return {

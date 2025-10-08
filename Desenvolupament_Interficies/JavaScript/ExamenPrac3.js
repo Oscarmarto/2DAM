@@ -1,4 +1,5 @@
-// 1️⃣ A partir d'un array d'objectes amb alumnes i les seves notes, torna un array amb els noms dels alumnes que tenen una mitjana ≥ 7
+// 1️⃣ A partir d'un array d'objectes amb alumnes i les seves notes, torna un 
+// array amb els noms dels alumnes que tenen una mitjana ≥ 7
 console.log("------------------------ Ej 1 -----------------------");
 let alumnes = [
   { nom: "Anna", notes: [8, 6, 7] },

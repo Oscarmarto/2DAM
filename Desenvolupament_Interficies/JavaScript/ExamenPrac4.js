@@ -115,6 +115,12 @@ let ofertes = [
   { producte: "Auriculars", preu: 45 },
   { producte: "Llibre", preu: 15 }
 ];
+
+const prodMenor20 = () => {
+    return ofertes.filter(elem => elem.preu < 20).map(elem => elem.producte)
+}
+
+console.log(prodMenor20())
 // Resultat esperat: ["Bolígraf", "Llibre"]
 
 // 9️⃣ A partir d'un array d'objectes amb usuari i correu, torna un array amb els usuaris que tenen correu electrònic que acaba amb ".com"
